@@ -1,17 +1,17 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import OrderPizzaForm from "../order/pizzaorder";
+import OrderPizzaForm from "..";
 import OrderReview from ".";
 
 const OrderPizza = () => {
    
-  return 
+  return (
     <>
         <Routes>
           <Route path="/" element={<OrderPizzaForm/>} />
           <Route path="review" element={<OrderReview/>} />
         </Routes>
     </>
-  
+  );
 };
 export default OrderPizza;

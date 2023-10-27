@@ -1,7 +1,6 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
-import Orders from "./nindex";
+import Orders from "./Orders";
 
 const Home = () => {
   const imageUrl = "https://www.saborusa.com/do/wp-content/uploads/sites/8/2019/11/Animate-a-disfrutar-una-deliciosa-pizza-de-salchicha-Foto-destacada.png";
@@ -13,7 +12,7 @@ const Home = () => {
               <img
                 className="background-image"
                 src={imageUrl}
-                alt="Pizza yummy"
+                alt="Pizza deliciosa"
               />
               <div className="overlay"></div>
             </div>

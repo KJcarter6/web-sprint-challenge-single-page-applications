@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import './App.css';
 import { BrowserRouter, Route, Link,Routes } from "react-router-dom";
-import Home from "./Orders";
-import OrderPizza from "./OrderReview/2index";
+import Home from "./Screens/Home";
+import OrderPizza from "./Screens/Home/Orders/OrderPizza/OrderPizzaForm/OrderReview/index2";
 
 const App = () => {
   const [activeOption, setActiveOption] = useState('home');
@@ -11,7 +11,7 @@ const App = () => {
     <>
         <div className="navigator">
           <div className="logo">
-            <h4>ITS PIZZA TIME </h4>
+            <h4>BloomTech Eats</h4>
           </div>
           <div className="options">
             <nav>
@@ -35,12 +35,11 @@ const App = () => {
           </div>
         </div>
         <Routes>
-          <Route path="/" element={< Home/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="pizza/*" element={<OrderPizza/>} />
         </Routes>
     </>
   );
 };
-
-
 export default App;
+

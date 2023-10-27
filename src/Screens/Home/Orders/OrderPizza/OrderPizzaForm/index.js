@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './index.css'; // Make sure to link your CSS file
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -47,12 +46,12 @@ const OrderPizzaForm = () => {
     } catch (error) {
       cleanFields();
     }
-   
+    // Process form submission logic here
     console.log('Form submitted:', { name, size, toppings, instructions });
   };
 
   const cleanFields = () => {
-  
+    // Reset form and error message
     setName('');
     setSize('small');
     setToppings({
